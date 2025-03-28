@@ -1,0 +1,247 @@
+html{ /* background colour for the page */
+    background-color: #f2f68b;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+/* set font for all the headers  */
+h1, h2, h3, h4, h5, h6{
+    font-family: "Autour One", system-ui;
+    font-weight: 400;
+    font-style: normal;  
+}
+/* different font for everythig that isnt a heading*/
+p, a, label, input{
+    font-family: "Delius", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/*header  */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #ff9fc9;
+}
+
+header div img {
+    height: 25%;
+    width: 25%;
+}
+
+nav menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav menu li {
+    margin-left: 20px;
+}
+
+nav menu li a {
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+    font-size: 1.3em;
+    color: #ffffff;
+    transition: .25s;
+}
+
+nav menu li a:hover {
+    color: #2a203a;
+    text-decoration: underline;
+    font-size: 1.5em;
+}
+
+/* index heading  */
+.intro{
+    text-align: center;
+    color: #2a203a;
+}
+
+.intro h2{
+    font-size: 2em;
+    font-weight: bold;
+}
+
+/* register form */
+.register {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 60vh; 
+    border: solid #ffffff 5px;
+    margin-left: 40vh;
+    margin-right: 40vh;
+    color: #2a203a;
+    padding-bottom: 5vh;
+}
+
+.register label, .logInHere label{
+    font-size: 1.2em;
+}
+
+.register form{
+    line-height: 2;
+    color: #2a203a;
+}
+
+.register form div{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+/* log in form */
+.logInHere {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh; 
+    border: solid #ffffff 5px;
+    margin-left: 40vh;
+    margin-right: 40vh;
+    color: #2a203a;
+    margin-top: 10vh;
+}
+
+.logInHere form{
+    line-height: 2;
+    color: #2a203a;
+}
+
+.logInHere form div{
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+/* input boxes for the username and password in the log in form*/
+.logInHere form input[type="text"], .logInHere form input[type="password"] {
+    width: 50vh;
+    padding: 2%; 
+    box-sizing: border-box;
+}
+
+/* submit button */
+input[type="submit"]{
+    border: 3px #2a203a solid;
+    background-color: #ff9fc9;
+    color: #ffffff;
+    font-size: 1em;
+    cursor: pointer;
+    padding: 8px 20px; 
+    margin-top: 5vh;
+}
+
+/* button styling */
+.button{
+    border: 3px #2a203a solid;
+    background-color: #ff9fc9;
+    color: #ffffff;
+    font-size: 1em;
+    cursor: pointer;
+    padding: 8px 20px; 
+    text-decoration: none;
+}
+
+/* styling the input boxes for the first name last name username email and password*/
+input[type="text"], input[type="email"], input[type="password"]{
+    padding: 1%;
+    border: 2px solid #2a203a;
+    outline: none;
+    transition: all .25s linear;
+}
+
+/* hover effect for the inputs */
+input[type="text"]:hover, input[type="email"]:hover, input[type="password"]:hover{
+    background-color: #ff9fc9;
+}
+
+/* focus effects for the inputs */
+input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focus{
+    border-radius: 15px;
+    border: #ff9fc9 2px solid;
+}
+
+/* hover effect for the submit button */
+input[type="submit"]:hover{
+    background-color: #2a203a;
+    border-color: #ffffff;
+}
+
+/* footer */
+footer{
+    text-align: center;
+}
+
+
+/* success page  */
+.successPage{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #2a203a;
+}
+
+.successPage h2{
+    font-size: 2em;
+}
+
+/* success page images */
+.catImages{
+    border: 5px #ffffff solid;
+    background-color: #ffffff;
+}
+
+.catImages img{
+    width: 50vh;
+    height: 50vh;
+}
+
+/* mobile */
+@media screen and (max-width: 768px){
+    /* form in mobile */
+    .logInHere form {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logInHere form input[type="text"], 
+    .logInHere form input[type="password"] {
+        width: 80%; 
+        padding: 2%; 
+        box-sizing: border-box;
+    }
+
+    .register, .logInHere {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+    }
+
+    /* images on mobile view*/
+    .catImages img{
+        width: 30vh;
+        height: 30vh;
+    }
+
+
+
+}
